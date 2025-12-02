@@ -1,50 +1,68 @@
-Cronograma de Estudos
+# Cronograma-de-Estudos 📅
 
-Este projeto é um sistema simples de organização de estudos em Python. O objetivo é permitir que o usuário cadastre conteúdos, associe cada um a um dia da semana e gerencie a lista conforme necessário.
+## 🔎 O que é  
+Um sistema simples em Python que organiza seu cronograma de estudos. Permite cadastrar “matérias/assuntos”, associá-los a dias da semana, listar, remover e persistir os dados em arquivo. Feito pra praticar lógica, manipulação de arquivos, menus interativos e organização de código.  
 
-A ideia surgiu como uma forma prática de treinar lógica, manipulação de arquivos e construção de menus interativos.
+## ✅ Funcionalidades  
 
-📌 Funcionalidades
+- Adicionar matéria com dia da semana correspondente.  
+- Listar todas as matérias cadastradas (com índice e dia).  
+- Remover matéria pelo nome.  
+- Persistência: ao iniciar, carrega todas as matérias salvas; ao modificar, atualiza o arquivo.  
+- Menu interativo no terminal com navegação clara e tratamento básico de erros.  
 
-Adicionar matéria
-O usuário informa o nome do conteúdo e o dia da semana. A matéria é salva tanto na memória quanto no arquivo Materias.txt.
+## 🧰 Tecnologias / Conceitos utilizados  
 
-Listar matérias cadastradas
-Exibe todas as matérias armazenadas, organizadas com índice e dia correspondente.
+- Linguagem: Python (3.x)  
+- Manipulação de arquivos de texto para persistência  
+- Estruturas de dados nativas (listas, dicionários) para armazenamento em memória  
+- Controle de fluxo, condicionais, funções  
+- Interface de terminal (CLI) simples — sem GUI  
 
-Remover matéria
-Permite remover uma matéria pelo nome. Após a remoção, o arquivo é atualizado para manter a lista consistente.
+## 🚀 Como rodar  
 
-Persistência de dados
-As matérias são carregadas automaticamente do arquivo dados/Materias.txt ao iniciar o programa.
+1. Clone o repositório:
 
-Menu interativo
-Navegação simples entre as ações disponíveis, com tratamento básico de erros para entradas inválidas.
-
-▶️ Como Executar
-
+   ```bash
+   git clone https://github.com/eduardonunesfvm/Cronograma-de-Estudos.git
+   cd Cronograma-de-Estudos
 Certifique-se de ter o Python 3 instalado.
 
-Crie a pasta dados na raiz do projeto, caso ainda não exista.
+Crie a pasta dados/ na raiz do projeto, caso ainda não exista.
 
-Execute o script:
+Execute:
 
-python nome_do_arquivo.py
+bash
+Copiar código
+python src/main.py
+# ou substitua `main.py` pelo nome correto do arquivo principal, se for diferente
+Use o menu no terminal para adicionar, listar ou remover matérias.
 
-📚 Aprendizados Envolvidos
+📂 Estrutura do projeto
+bash
+Copiar código
+/Cronograma-de-Estudos  
+ ├── src/           # código-fonte  
+ │    └── main.py   # arquivo principal (ou equivalente)  
+ ├── dados/         # pasta para arquivos de dados (listas de matérias, histórico etc.)  
+ ├── README.md  
+⚠️ Limitações e observações
+Interface via terminal — não há interface gráfica.
 
-Manipulação de listas e dicionários
+Persistência básica com arquivos .txt; não há banco de dados nem tratamento avançado de erros (validações, concorrência etc.).
 
-Estruturas condicionais e funções
+Código simples, ideal para estudo/personal use — não robusto para uso em produção ou multiusuário.
 
-Tratamento simples de exceções
+💡 Possíveis melhorias / Próximos passos
+Migrar para persistência com JSON ou banco de dados leve (SQLite) — facilita leitura/escrita e mantém estrutura.
 
-Leitura e escrita em arquivos de texto
+Criar interface gráfica (GUI) ou versão web para tornar mais amigável.
 
-Construção de menus interativos
+Adicionar validação mais robusta nas entradas (campos vazios, caracteres especiais, duplicidade).
 
-Organização básica de um projeto Python
+Permitir múltiplos “cronogramas” (ex: para diferentes semanas/períodos).
 
-📝 Observação
+Adicionar opção de backup ou exportação de dados.
 
-Este projeto foi desenvolvido como prática pessoal para reforçar conceitos iniciais de lógica e persistência de dados. Pode servir como base para melhorias futuras, como interface gráfica, validação mais robusta, uso de JSON, etc.
+👨‍💻 Autor
+Eduardo Nunes — GitHub: @eduardonunesfvm
